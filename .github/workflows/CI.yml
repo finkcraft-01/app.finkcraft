@@ -28,3 +28,7 @@ jobs:
       - name: Run flake8 linting
         run: |
           flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
+
+      - name: Run pytest unit tests       # ✅ Add this block
+        run: |
+          pytest
